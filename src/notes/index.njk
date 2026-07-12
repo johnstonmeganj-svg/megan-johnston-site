@@ -1,0 +1,29 @@
+---
+layout: base.njk
+permalink: "notes/"
+navActive: notes
+title: "Field Notes — Megan Johnston"
+description: "Field notes on film and TV production, set life, and the AD department, from Megan Johnston."
+ogTitle: "Field Notes — Megan Johnston"
+ogDescription: "Field notes on film and TV production, set life, and the AD department."
+---
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">Field Notes</span>
+    <h1>Field notes from set.</h1>
+    <p class="lede">Occasional writing on production, the AD department, and the practical side of getting things made.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    {% for post in collections.notes %}
+    <article class="post-preview">
+      <div class="meta">{{ post.data.category }}</div>
+      <h3><a href="{{ post.url }}">{{ post.data.heading or post.data.title }}</a></h3>
+      <p>{{ post.data.excerpt }}</p>
+      <a href="{{ post.url }}">Read more &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

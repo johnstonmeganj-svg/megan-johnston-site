@@ -1,0 +1,45 @@
+---
+layout: base.njk
+permalink: "work/"
+navActive: work
+title: "Work & Credits — Megan Johnston, Bozeman MT"
+description: "Production assistant, 1st AD, and production coordination credits for Megan Johnston: commercials, series, features, and shorts, based in Bozeman, MT."
+ogTitle: "Megan Johnston — Work & Credits"
+ogDescription: "Narrative and commercial production credits, from Set PA to 1st AD, nationwide."
+---
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">Work</span>
+    <h1>On-set credits.</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="credit-group">
+      <h2>Narrative</h2>
+      {% for credit in credits.narrative %}
+      <div class="credit-item">
+        <div>
+          <span class="credit-title">{{ credit.title }}</span>
+          <span class="credit-role">{{ credit.role }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="credit-group">
+      <h2>Commercial</h2>
+      {% for credit in credits.commercial %}
+      <div class="credit-item">
+        <div>
+          <span class="credit-title">{{ credit.title }}</span>
+          <span class="credit-role">{{ credit.role }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

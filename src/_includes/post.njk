@@ -1,0 +1,17 @@
+---
+layout: base.njk
+schema: article
+ogType: article
+---
+<section>
+  <div class="wrap post-header">
+    <div class="meta">{{ category }}</div>
+    <h1>{{ heading or title }}</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap post-body">
+    {{ content | safe }}
+  </div>
+</section>

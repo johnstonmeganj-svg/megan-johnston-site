@@ -1,0 +1,14 @@
+{
+  "name": "megan-johnston-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Megan Johnston — personal site, built with Eleventy and editable via Decap CMS.",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "watch": "eleventy --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

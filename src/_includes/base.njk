@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}{% if schema == 'article' %} — {{ site.name }}{% endif %}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ ogTitle or title }}">
+<meta property="og:description" content="{{ ogDescription or description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:image" content="{{ site.url }}/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ ogTitle or title }}">
+<meta name="twitter:description" content="{{ ogDescription or description }}">
+<meta name="twitter:image" content="{{ site.url }}/images/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/analytics.js" defer></script>
+{% if schema == "person" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}/",
+  "jobTitle": "Production Assistant / 1st Assistant Director / Production Coordinator",
+  "image": "{{ site.url }}/images/og-image.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bozeman",
+    "addressRegion": "Montana",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "{{ site.instagram }}",
+    "{{ site.imdb }}",
+    "{{ site.linkedin }}"
+  ]
+}
+</script>
+{% elif schema == "article" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "description": "{{ description }}",
+  "author": { "@type": "Person", "name": "{{ site.name }}" },
+  "datePublished": "{{ date | isoDate }}",
+  "image": "{{ site.url }}/images/og-image.png",
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
+}
+</script>
+{% endif %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><a href="/">{{ site.name }}</a></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/"{% if navActive == 'home' %} class="active"{% endif %}>Home</a></li>
+        <li><a href="/work/"{% if navActive == 'work' %} class="active"{% endif %}>Work</a></li>
+        <li><a href="/about/"{% if navActive == 'about' %} class="active"{% endif %}>About</a></li>
+        <li><a href="/notes/"{% if navActive == 'notes' %} class="active"{% endif %}>Field Notes</a></li>
+        <li><a href="/contact/"{% if navActive == 'contact' %} class="active"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{{ content | safe }}
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 {{ site.name }}</span>
+    <span class="foot-links">
+      <a href="/work/">Work</a>
+      <a href="/about/">About</a>
+      <a href="/notes/">Field Notes</a>
+      <a href="/contact/">Contact</a>
+      <a href="{{ site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="{{ site.imdb }}" target="_blank" rel="noopener noreferrer">IMDb</a>
+      <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

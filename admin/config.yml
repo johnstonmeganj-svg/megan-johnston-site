@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images land, and the URL path the site uses to serve them.
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "notes"
+    label: "Field Notes"
+    label_singular: "Post"
+    folder: "src/notes"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} — {{category}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "", pattern: ['.*', 'auto-filled on save'] }
+      - { label: "Title (also the page heading)", name: "title", widget: "string", hint: "Shows as both the headline on the page and the browser tab title." }
+      - { label: "Meta description (for Google & social previews)", name: "description", widget: "text" }
+      - { label: "Card excerpt (shown on the Field Notes listing page)", name: "excerpt", widget: "text" }
+      - { label: "Category label", name: "category", widget: "string", hint: 'e.g. "July 2026 · Commercial"' }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Advanced (optional)"
+        name: "advanced"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - { label: "Override on-page heading", name: "heading", widget: "string", required: false, hint: "Only if the H1 should read differently than the title above." }
+          - { label: "Override share-preview title", name: "ogTitle", widget: "string", required: false }
+          - { label: "Override share-preview description", name: "ogDescription", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "credits"
+    label: "Work Credits"
+    files:
+      - name: "credits"
+        label: "Narrative & Commercial Credits"
+        file: "src/_data/credits.json"
+        fields:
+          - label: "Narrative"
+            name: "narrative"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", hint: 'e.g. "1st AD, Short · 2nd AD Mallory Regan"' }
+          - label: "Commercial"
+            name: "commercial"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", hint: 'e.g. "Set Production Assistant"' }
