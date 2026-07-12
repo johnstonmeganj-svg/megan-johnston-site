@@ -11,7 +11,7 @@
 */
 
 (function () {
-  var GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- replace with your real ID
+  var GA_MEASUREMENT_ID = 'G-E4NT5TV743';
 
   if (GA_MEASUREMENT_ID.indexOf('XXXX') !== -1) {
     // Not configured yet — skip loading so no errors show in the console.
