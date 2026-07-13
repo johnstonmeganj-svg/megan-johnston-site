@@ -1,22 +1,125 @@
 {
   "narrative": [
-    { "title": "Age of Wellness", "role": "1st AD, Short · 2nd AD Mallory Regan" },
-    { "title": "The Madison, Season 2", "role": "Utility Set Production Assistant, Series · 1st AD Kether Abeles / Key 2nd Alex Salazar / 2nd 2nd Ben Gregory" },
-    { "title": "High Moon at Blackwood", "role": "Key Production Assistant, Feature · 1st AD Matthew Webb / 2nd AD Dan Gloeckner / 2nd 2nd Alexa Timon" },
-    { "title": "The Time Between", "role": "Key Production Assistant, Short · 1st AD Noah Grile" },
-    { "title": "The Blistering Blundering West", "role": "Set Production Assistant, Short · 1st AD Mallory Regan" },
-    { "title": "Homestead Rescue", "role": "Set Production Assistant, Unscripted TV" },
-    { "title": "Daughter of the Plains", "role": "Set Production Assistant, Short" }
+    {
+      "title": "Age of Wellness",
+      "role": "1st AD",
+      "staff": "2nd AD Mallory Regan",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "String Theory",
+      "role": "1st AD | Producer",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "The Madison, Season 2",
+      "role": "Utility Set Production Assistant",
+      "staff": "1st AD Kether Abeles | Key 2nd Alex Salazar | 2nd 2nd Ben Gregory",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "High Moon at Blackwood",
+      "role": "Key Production Assistant",
+      "staff": "1st AD Matthew Webb | 2nd AD Dan Gloeckner | 2nd 2nd AD Alexa Timon",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "The Time Between",
+      "role": "Key Production Assistant",
+      "staff": "1st AD Noah Grile",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "The Blistering Blundering West",
+      "role": "Set Production Assistant",
+      "staff": "1st AD Mallory Regan",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Homestead Rescue",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Daughter of the Plains",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    }
   ],
   "commercial": [
-    { "title": "Boot Barn", "role": "Production Support · Great Falls & Twodot, MT" },
-    { "title": "Welcome US — Earned It", "role": "1st AD" },
-    { "title": "Capitol One", "role": "Key Set Production Assistant · 1st AD Nils Claussen" },
-    { "title": "Ralph Lauren Fall Winter Campaign", "role": "Set Production Assistant" },
-    { "title": "Double RL by Ralph Lauren", "role": "Set Production Assistant" },
-    { "title": "Honda Snowblowers", "role": "Set Production Assistant · 1st AD Reggie Ingraham / 2nd AD Jeri Rafter" },
-    { "title": "Bozeman Health", "role": "Set Production Assistant" },
-    { "title": "Guinness Draughts", "role": "Set Production Assistant" },
-    { "title": "Oboz Footwear", "role": "Set Production Assistant" }
+    {
+      "title": "Boot Barn",
+      "role": "Production Assistant | Production Support",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Welcome US \u2014 Earned It",
+      "role": "1st AD",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Capitol One",
+      "role": "Key Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Ralph Lauren Fall Winter Campaign",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Double RL by Ralph Lauren",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Honda Snowblowers",
+      "role": "Set Production Assistant",
+      "staff": "1st AD Reggie Ingraham | 2nd AD Jeri Rafter",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Bozeman Health",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Guinness Draughts",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Oboz Footwear",
+      "role": "Set Production Assistant",
+      "staff": "",
+      "photo": "",
+      "photoAlt": ""
+    }
   ]
 }

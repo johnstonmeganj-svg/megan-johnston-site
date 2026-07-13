@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/ig"
+  to = "/?utm_source=instagram&utm_medium=bio&utm_campaign=organic_profile"
+  status = 301
+  force = true

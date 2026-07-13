@@ -1,0 +1,15 @@
+{
+  "heroFirstName": "Megan",
+  "heroLastName": "Johnston",
+  "heroTagline": "Freelance Producer & Assistant Director",
+  "tickerPhrases": ["Based in Bozeman, Montana", "Happy to Hit the Road"],
+  "selectedWork": [
+    { "tag": "Commercial", "title": "Welcome US — Earned It", "role": "1st AD" },
+    { "tag": "Narrative", "title": "Age of Wellness", "role": "1st AD" },
+    { "tag": "Narrative", "title": "High Moon at Blackwood", "role": "Key Production Assistant" }
+  ],
+  "notesHeading": "Notes from the field.",
+  "ctaHeading": "Open to production opportunities in narrative and commercial work.",
+  "ctaBody": "Looking forward to hearing about your project and how we can work together.",
+  "ctaButton": "Get in touch"
+}

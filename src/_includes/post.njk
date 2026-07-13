@@ -12,6 +12,7 @@ ogType: article
 
 <section>
   <div class="wrap post-body">
+    {% if photo %}<img src="{{ photo }}" alt="{{ photoAlt or title }}" class="post-photo">{% endif %}
     {{ content | safe }}
   </div>
 </section>

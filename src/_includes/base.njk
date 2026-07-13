@@ -65,6 +65,9 @@
 </head>
 <body>
 
+{% if navActive == 'home' %}
+<div class="page-top">
+{% endif %}
 <header class="site-header">
   <div class="wrap">
     <div class="brand"><a href="/">{{ site.name }}</a></div>
@@ -73,7 +76,7 @@
         <li><a href="/"{% if navActive == 'home' %} class="active"{% endif %}>Home</a></li>
         <li><a href="/work/"{% if navActive == 'work' %} class="active"{% endif %}>Work</a></li>
         <li><a href="/about/"{% if navActive == 'about' %} class="active"{% endif %}>About</a></li>
-        <li><a href="/notes/"{% if navActive == 'notes' %} class="active"{% endif %}>Field Notes</a></li>
+        <li><a href="/notes/"{% if navActive == 'notes' %} class="active"{% endif %}>Notes</a></li>
         <li><a href="/contact/"{% if navActive == 'contact' %} class="active"{% endif %}>Contact</a></li>
       </ul>
     </nav>
@@ -88,11 +91,11 @@
     <span class="foot-links">
       <a href="/work/">Work</a>
       <a href="/about/">About</a>
-      <a href="/notes/">Field Notes</a>
+      <a href="/notes/">Notes</a>
       <a href="/contact/">Contact</a>
-      <a href="{{ site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="{{ site.imdb }}" target="_blank" rel="noopener noreferrer">IMDb</a>
-      <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="social-icon icon-instagram" href="{{ site.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="social-icon icon-imdb" href="{{ site.imdb }}" target="_blank" rel="noopener noreferrer" aria-label="IMDb"><svg viewBox="0 0 40 24" aria-hidden="true"><text x="20" y="17" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="currentColor" text-anchor="middle">IMDb</text></svg></a>
+      <a class="social-icon icon-linkedin" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3.5 9.75h3v10.75h-3zM9.75 9.75h2.88v1.47h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v6.24h-3v-5.53c0-1.32-.02-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92v5.63h-3z"/></svg></a>
     </span>
   </div>
 </footer>

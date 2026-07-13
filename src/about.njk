@@ -3,51 +3,44 @@ layout: base.njk
 permalink: "about/"
 navActive: about
 title: "About Megan Johnston — Bozeman, MT Production Assistant"
-description: "Megan Johnston is a Bozeman, MT production assistant, 1st AD, and production coordinator with a background in marketing and her own video business."
+description: "Megan Johnston is a Bozeman, MT 1st AD and production support professional, connected to local Montana crews, vendors, and locations."
 ogType: profile
 ogTitle: "About Megan Johnston — Bozeman, Montana Production Assistant & 1st AD"
-ogDescription: "From marketing and her own freelance video business to production assistant and 1st AD work across Montana and nationwide."
-heroLede: "I'm Bozeman, Montana-based, providing production support and assistant director services, and available to travel worldwide. Tag me in for any help you need learning about the local communities and getting connected with vendors."
+ogDescription: "1st AD and production support work across Montana and nationwide, backed by a background in business and marketing."
 ---
 <section class="hero">
   <div class="wrap">
     <span class="tag">About</span>
     <h1>The short version.</h1>
-    <p class="lede">{{ heroLede }}</p>
+    <p class="lede">{{ about.lede }}</p>
   </div>
 </section>
 
+{% if about.portrait %}
 <section>
   <div class="wrap">
-    <h2>My story.</h2>
-    <p>I got here by checking off a lifelong bucket list item: being an extra. Stepping onto the <em>Yellowstone</em> season 5 set was what opened my eyes to the possibilities in film. From there, I broke down doors to work on my first set and haven't looked back.</p>
-    <p>With a background and degree in business sales &amp; marketing, I use my skillset to communicate, handle logistics, and keep the day moving forward calmly and joyfully.</p>
+    <img src="{{ about.portrait }}" alt="{{ about.portraitAlt or 'Megan Johnston' }}" style="display:block; width:100%; max-width:420px; height:auto; border-radius:var(--radius); border:3px solid var(--black);">
   </div>
 </section>
+{% endif %}
 
 <section>
   <div class="wrap">
-    <h2>How I work.</h2>
-    <div class="reasons-grid">
-      <div class="reason-item">
-        <h3>Organized by habit</h3>
-        <p>Years of coordinating multi-location events, client pipelines, and dozens of accounts at once made tight scheduling second nature.</p>
+    <h2>{{ about.cardsHeading }}</h2>
+    <div class="reasons-grid reasons-grid-cards">
+      {% for card in about.cards %}
+      <div class="reason-item reason-card reason-card-{{ card.color }}">
+        <h3>{{ card.text }}</h3>
       </div>
-      <div class="reason-item">
-        <h3>People person</h3>
-        <p>Cultivating relationships was the whole job in my last career. That translates directly to a call sheet full of strangers on day one.</p>
-      </div>
-      <div class="reason-item">
-        <h3>Positive &amp; adaptable</h3>
-        <p>Great at staying upbeat and making it happen, even on a shoot day gone long.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<section>
+<section class="cta-banner">
   <div class="wrap">
-    <h2>Want the full history?</h2>
-    <p>The <a href="/work/">work page</a> has the full list of credits.</p>
+    <h2>{{ about.ctaHeading }}</h2>
+    <p>{{ about.ctaBody }}</p>
+    <a class="btn" href="/contact/">{{ about.ctaButton }} &rarr;</a>
   </div>
 </section>
