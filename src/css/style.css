@@ -558,6 +558,14 @@ section h2 {
   margin: 0 0 28px;
 }
 
+.post-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 8px 0 28px;
+}
+
 .post-header .meta {
   font-size: 13px;
   font-weight: 700;
