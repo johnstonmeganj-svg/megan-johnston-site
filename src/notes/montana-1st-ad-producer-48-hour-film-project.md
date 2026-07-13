@@ -50,19 +50,19 @@ If you're in Montana, you can see how it all turned out. There were 19 teams thi
 
 **Crew List:**
 
-- **Writer / Director / Producer** — D. B.
-- **Executive Producer / 1st Assistant Director** — Megan Hansen
-- **Director of Photography** — Liam Kenneth Reid
-- **Production Designer / Make Up Artist** — Kyah Louise Smith
-- **Prop Master / Set Decorator** — Elizabeth Kellogg
-- **Sound Mixer / Sound Effects** — Brandon Clements
-- **Gaffer / Sound Mixer** — Tyler Croft
-- **Key Grip** — Jerad Stretton
-- **Set Decorator / Make Up Artist / Hair Stylist** — Tori Borbash
-- **1st Assistant Camera** — Parker Temple
-- **Editor / Colorist** — Jim Menkol
-- **Composer** — Andrew Spencer
-- **Production Assistant** — Abigail "Bee" Laird
+**Writer / Director / Producer:** D. B.  
+**Executive Producer / 1st Assistant Director:** Megan Hansen  
+**Director of Photography:** Liam Kenneth Reid  
+**Production Designer / Make Up Artist:** Kyah Louise Smith  
+**Prop Master / Set Decorator:** Elizabeth Kellogg  
+**Sound Mixer / Sound Effects:** Brandon Clements  
+**Gaffer / Sound Mixer:** Tyler Croft  
+**Key Grip:** Jerad Stretton  
+**Set Decorator / Make Up Artist / Hair Stylist:** Tori Borbash  
+**1st Assistant Camera:** Parker Temple  
+**Editor / Colorist:** Jim Menkol  
+**Composer:** Andrew Spencer  
+**Production Assistant:** Abigail "Bee" Laird
 
 **Special Thanks:** [Rocky Mountain Grip & Electric](https://www.rockymtngripandelectric.com/)
 
