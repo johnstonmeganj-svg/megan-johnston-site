@@ -80,8 +80,10 @@ collections:
             summary: "{{title}}"
             fields:
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "Type badge", name: "type", widget: "select", options: ["short", "feature", "series", "unscripted"], required: false, hint: "Shows as a small colored badge next to the title. Leave blank to hide." }
               - { label: "Role", name: "role", widget: "string", hint: 'Your role only, e.g. "Utility Set Production Assistant"' }
               - { label: "Staff", name: "staff", widget: "string", required: false, hint: 'Other crew on the job, separated by " | ", e.g. "1st AD Kether Abeles | Key 2nd Alex Salazar | 2nd 2nd Ben Gregory". Leave blank if none.' }
+              - { label: "Filter tags", name: "filterRole", widget: "string", hint: 'Controls which buttons (1st AD, Producer, Production Assistant, Production Support) show this credit. Space-separated, e.g. "1st-ad producer".' }
               - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Optional small photo shown next to this credit." }
               - { label: "Photo description", name: "photoAlt", widget: "string", required: false }
           - label: "Commercial"
@@ -92,6 +94,7 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Role", name: "role", widget: "string", hint: 'Your role only, e.g. "Set Production Assistant"' }
               - { label: "Staff", name: "staff", widget: "string", required: false, hint: 'Other crew on the job, separated by " | ". Leave blank if none.' }
+              - { label: "Filter tags", name: "filterRole", widget: "string", hint: 'Controls which buttons (1st AD, Producer, Production Assistant, Production Support) show this credit. Space-separated, e.g. "production-assistant production-support".' }
               - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Optional small photo shown next to this credit." }
               - { label: "Photo description", name: "photoAlt", widget: "string", required: false }
 

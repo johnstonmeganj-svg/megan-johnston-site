@@ -17,13 +17,22 @@ ogDescription: "Narrative and commercial production credits, from Set PA to 1st 
 <section>
   <div class="wrap">
 
-    <div class="credit-group">
+    <div class="filter-chips">
+      <button type="button" class="chip active" data-filter="all">All</button>
+      <button type="button" class="chip" data-filter="1st-ad">1st AD</button>
+      <button type="button" class="chip" data-filter="producer">Producer</button>
+      <button type="button" class="chip" data-filter="production-assistant">Production Assistant</button>
+      <button type="button" class="chip" data-filter="production-support">Production Support</button>
+    </div>
+
+    <div class="credit-group" data-credit-group>
       <h2>NARRATIVE</h2>
       {% for credit in credits.narrative %}
-      <div class="credit-item">
+      <div class="credit-item" data-role="{{ credit.filterRole }}">
         {% if credit.photo %}<img src="{{ credit.photo }}" alt="{{ credit.photoAlt or credit.title }}" class="credit-photo">{% endif %}
         <div>
           <span class="credit-title">{{ credit.title }}</span>
+          {% if credit.type %}<span class="credit-type type-{{ credit.type }}">{{ credit.type }}</span>{% endif %}
           <span class="credit-role">{{ credit.role }}</span>
           {% if credit.staff %}<span class="credit-staff">{{ credit.staff }}</span>{% endif %}
         </div>
@@ -31,13 +40,14 @@ ogDescription: "Narrative and commercial production credits, from Set PA to 1st 
       {% endfor %}
     </div>
 
-    <div class="credit-group">
+    <div class="credit-group" data-credit-group>
       <h2>COMMERCIAL</h2>
       {% for credit in credits.commercial %}
-      <div class="credit-item">
+      <div class="credit-item" data-role="{{ credit.filterRole }}">
         {% if credit.photo %}<img src="{{ credit.photo }}" alt="{{ credit.photoAlt or credit.title }}" class="credit-photo">{% endif %}
         <div>
           <span class="credit-title">{{ credit.title }}</span>
+          {% if credit.type %}<span class="credit-type type-{{ credit.type }}">{{ credit.type }}</span>{% endif %}
           <span class="credit-role">{{ credit.role }}</span>
           {% if credit.staff %}<span class="credit-staff">{{ credit.staff }}</span>{% endif %}
         </div>
@@ -47,3 +57,29 @@ ogDescription: "Narrative and commercial production credits, from Set PA to 1st 
 
   </div>
 </section>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var groups = document.querySelectorAll('[data-credit-group]');
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      var filter = chip.getAttribute('data-filter');
+
+      groups.forEach(function (group) {
+        var visibleCount = 0;
+        group.querySelectorAll('.credit-item').forEach(function (item) {
+          var roles = (item.getAttribute('data-role') || '').split(' ');
+          var match = filter === 'all' || roles.indexOf(filter) !== -1;
+          item.style.display = match ? '' : 'none';
+          if (match) visibleCount++;
+        });
+        group.style.display = visibleCount > 0 ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
