@@ -10,3 +10,9 @@
   to = "/?utm_source=instagram&utm_medium=bio&utm_campaign=organic_profile"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/notes/on-set-with-boot-barn-in-montana/"
+  to = "/notes/"
+  status = 301
+  force = true
