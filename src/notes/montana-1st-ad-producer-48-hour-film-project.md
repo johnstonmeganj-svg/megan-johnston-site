@@ -5,7 +5,7 @@ title: "Two Hats, One Clock: Producing and 1st AD-ing a Montana 48 Hour Film Pro
 ogTitle: "Two Hats, One Clock: Producing and 1st AD-ing a Montana 48 Hour Film Project"
 description: "A Montana 1st AD and producer's behind-the-scenes look at the 48 Hour Film Project, real set lessons from someone who works productions across Montana."
 ogDescription: "A Montana 1st AD and producer's behind-the-scenes look at the 48 Hour Film Project."
-excerpt: "A behind-the-scenes look at producing and 1st AD-ing a 48-hour film shoot in Montana — plus where to see the finished film."
+excerpt: "A behind-the-scenes look at producing and 1st AD-ing a 48-hour film shoot in Montana, plus where to see the finished film."
 category: "July 2026 · Set Life"
 date: 2026-07-13
 photo: "/images/uploads/field-notes-48hfp-photo-1-desk-setup.jpg"
