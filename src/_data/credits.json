@@ -145,6 +145,30 @@
       "filterRole": "production-assistant",
       "photo": "",
       "photoAlt": ""
+    },
+    {
+      "title": "Free Country",
+      "role": "1st AD",
+      "staff": "",
+      "filterRole": "1st-ad",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Montanans Decide",
+      "role": "Production Coordinator",
+      "staff": "",
+      "filterRole": "production-coordinator",
+      "photo": "",
+      "photoAlt": ""
+    },
+    {
+      "title": "Chevrolet",
+      "role": "Production Assistant",
+      "staff": "Director Jeff Cronenworth | 1st AD Michael Kahn | 2nd AD Irv Gentry",
+      "filterRole": "production-assistant",
+      "photo": "",
+      "photoAlt": ""
     }
   ]
 }
